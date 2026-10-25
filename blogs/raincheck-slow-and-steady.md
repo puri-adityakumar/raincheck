@@ -116,4 +116,4 @@ I haven't timed anyone using it yet, so I won't put a number on it. The honest v
 
 ## Prize Categories
 
-I'm not entering a partner category this week. Raincheck has a Render blueprint, but the app isn't deployed on Render. Its open-weight adapter targets Tinker, but the Tinker category asks for a measured fine-tune against a baseline, and I haven't run one. The narration in the demo is macOS text-to-speech, not ElevenLabs. I'd rather say that than claim categories I haven't earned.
+I'm not entering a partner category this week. Raincheck has a Render blueprint, but the app isn't deployed on Render. Its open-weight adapter targets Tinker, but the Tinker category asks for a measured fine-tune against a baseline, and I haven't run one. The narration in the demo is Microsoft Edge neural text-to-speech (the Andrew voice), not ElevenLabs. I'd rather say that than claim categories I haven't earned.
