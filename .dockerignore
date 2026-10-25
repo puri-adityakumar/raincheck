@@ -31,6 +31,7 @@ frontend/frontend-a11y-*.json
 .idea
 development-loop
 public-docs
+blogs
 README.md
 AGENTS.md
 checks.sh

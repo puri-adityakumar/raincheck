@@ -1,0 +1,6 @@
+This is Raincheck. A small, open-source desk for cancelling a plan kindly, and offering one real next time.
+You say who it's for, and what the plan was. Pick a city, and the forecast comes straight from Open-Meteo. Open data, signed by the server.
+AI drafting is switched off in this build. The desk says so plainly, and you write the note yourself.
+You read the live preview, tick two checks, and only then does it make one expiring link. Nothing is sent for you.
+Your friend opens the link, and accepts with one click. No account. No calendar writes. Just a tentative calendar file.
+Good plans, another day. Raincheck is open source on GitHub.
