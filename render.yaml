@@ -1,0 +1,31 @@
+databases:
+  - name: raincheck-db
+    databaseName: raincheck
+    user: raincheck
+
+services:
+  - type: web
+    name: raincheck
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: false
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: raincheck-db
+          property: connectionString
+      - key: WEATHER_TOKEN_SECRET
+        generateValue: true
+      - key: AI_PROVIDER
+        value: none
+      - key: TINKER_ALLOW_PAID_INFERENCE
+        value: "false"
+      - key: RAINCHECK_ALLOW_PAID_TRAINING
+        value: "0"
+      - key: TICKET_TTL_DAYS
+        value: "30"
+      - key: ENABLE_API_DOCS
+        value: "false"

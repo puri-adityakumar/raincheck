@@ -1,0 +1,42 @@
+[project]
+name = "raincheck-api"
+version = "0.1.0"
+description = "Raincheck API — kind cancellations and tentative rainchecks"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.116,<1",
+  "uvicorn[standard]>=0.35,<1",
+  "pydantic-settings>=2.10,<3",
+  "sqlalchemy>=2.0.41,<3",
+  "psycopg[binary]>=3.2,<4",
+  "httpx>=0.28,<1",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.4,<9",
+  "ruff>=0.12,<1",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-ra"
+filterwarnings = [
+  "error::DeprecationWarning:app.*",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+# B008: FastAPI's Depends()/Query() are intentionally evaluated in defaults.
+ignore = ["RUF001", "RUF002", "RUF003", "B008"]
+
+[tool.ruff.format]
+quote-style = "double"

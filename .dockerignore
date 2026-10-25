@@ -1,0 +1,39 @@
+# dependencies
+frontend/node_modules
+frontend/dist
+backend/.venv
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+
+# local data and secrets
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+**/*.log
+.checks.*
+frontend/raincheck-*.png
+frontend/frontend-a11y-*.json
+.DS_Store
+
+# vcs / editor / docs
+.git
+.gitignore
+.vscode
+.idea
+development-loop
+public-docs
+README.md
+AGENTS.md
+checks.sh
+
+# tests are not needed in the production image
+backend/tests

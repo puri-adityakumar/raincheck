@@ -1,0 +1,3 @@
+# Optional, installed only after explicit authorization for live AI.
+# Adapter API was verified against the official SDK 0.34.0 reference.
+tinker==0.34.0

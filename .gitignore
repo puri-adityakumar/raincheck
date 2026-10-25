@@ -1,0 +1,53 @@
+# Local and generated files
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+*.db-*
+*.sqlite-*
+*.sqlite3-*
+.DS_Store
+
+# Private credentials and local datasets
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+*.jsonl
+/data/
+/datasets/
+
+# Local agent coordination and browser/review evidence, not public source
+/AGENTS.md
+/development-loop/
+/frontend/raincheck-*.png
+/frontend/frontend-a11y-*.json
+
+# Python
+backend/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+coverage/
+
+# Build / runtime
+/.checks.*/
+raincheck-build-*/
+*.log
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
